@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,24 +16,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pco-s9-0QS" userLabel="eventsStack">
-                                <rect key="frame" x="20" y="40" width="374" height="587"/>
+                                <rect key="frame" x="20" y="40" width="335" height="518"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqN-rd-5w1" userLabel="firstEvent">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="123.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCK-1F-Dj9" userLabel="topBoxLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="140.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="123.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvG-gC-zBR" userLabel="topBoxDown">
-                                                <rect key="frame" x="334" y="0.0" width="40" height="140.66666666666666"/>
+                                                <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="NJ1-S9-u51"/>
                                                     <constraint firstAttribute="width" constant="40" id="lfW-fL-aVv"/>
@@ -46,28 +46,28 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-bX-GXI" userLabel="secondEvent">
-                                        <rect key="frame" x="0.0" y="148.66666666666666" width="374" height="140.99999999999997"/>
+                                        <rect key="frame" x="0.0" y="131.5" width="335" height="123.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-Ql-pn1" userLabel="secondBoxLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="141"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-Ql-pn1" userLabel="secondBoxLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="123.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-lT-2yM" userLabel="secondEventButtons">
-                                                <rect key="frame" x="334" y="0.0" width="40" height="141"/>
+                                                <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEv-PN-hmy" userLabel="secondBoxUp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="70.333333333333329"/>
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEv-PN-hmy" userLabel="secondBoxUp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="0mp-FL-AVf"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="YEL-IN-Be1"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-G3-wOo" userLabel="secondBoxDown">
-                                                        <rect key="frame" x="0.0" y="70.333333333333343" width="40" height="70.666666666666657"/>
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-G3-wOo" userLabel="secondBoxDown">
+                                                        <rect key="frame" x="0.0" y="62" width="40" height="61.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="ng3-Xq-Sle"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tXs-sS-Nk7"/>
@@ -82,28 +82,28 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-eA-4tK" userLabel="thirdEvent">
-                                        <rect key="frame" x="0.0" y="297.66666666666669" width="374" height="140.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="263" width="335" height="123.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J14-Ga-Hhl" userLabel="thirdBoxLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="140.66666666666666"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J14-Ga-Hhl" userLabel="thirdBoxLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="123.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-Yl-cwH" userLabel="thirdEventButtons">
-                                                <rect key="frame" x="334" y="0.0" width="40" height="140.66666666666666"/>
+                                                <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-EX-lyy" userLabel="thirdBoxUp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="70.333333333333329"/>
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-EX-lyy" userLabel="thirdBoxUp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="coQ-BC-0aA"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lHy-e8-bv4"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-YG-9Tx" userLabel="thirdBoxDown">
-                                                        <rect key="frame" x="0.0" y="70.333333333333314" width="40" height="70.333333333333314"/>
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-YG-9Tx" userLabel="thirdBoxDown">
+                                                        <rect key="frame" x="0.0" y="62" width="40" height="61.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NLt-Cb-RIq"/>
                                                             <constraint firstAttribute="width" constant="40" id="qrM-A6-B2a"/>
@@ -118,17 +118,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxj-Mu-9A8" userLabel="fourthEvent">
-                                        <rect key="frame" x="0.0" y="446.33333333333331" width="374" height="140.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="394.5" width="335" height="123.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwG-bR-Xge" userLabel="fourthBoxLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="140.66666666666666"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwG-bR-Xge" userLabel="fourthBoxLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="123.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-ll-qgL" userLabel="fourthBoxUp">
-                                                <rect key="frame" x="334" y="0.0" width="40" height="140.66666666666666"/>
+                                                <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="8Sr-Xe-dM8"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="HmW-DP-ZLs"/>
@@ -143,7 +143,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO0-j3-dT3" userLabel="timeLeftLabel">
-                                <rect key="frame" x="163.33333333333334" y="647" width="87.666666666666657" height="40"/>
+                                <rect key="frame" x="143.5" y="578" width="88" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="x7Z-ks-xP9"/>
                                 </constraints>
@@ -152,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rJ-am-S2f" userLabel="completeInstructionLabel">
-                                <rect key="frame" x="135.66666666666669" y="695.66666666666663" width="142.66666666666669" height="20.333333333333371"/>
+                                <rect key="frame" x="116.5" y="626.5" width="142.5" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="YxB-ow-xf1"/>
                                 </constraints>
