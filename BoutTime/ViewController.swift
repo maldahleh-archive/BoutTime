@@ -9,17 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var eventLabelOne: UILabel!
+    @IBOutlet weak var eventLabelTwo: UILabel!
+    @IBOutlet weak var eventLabelThree: UILabel!
+    @IBOutlet weak var eventLabelFour: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        prepareUI()
+    }
+    
+    // MARK: UI related methods
+    func prepareUI() {
+        roundLabelCorners()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: UI Helper methods
+    func roundLabelCorners() {
+        eventLabelOne.layer.masksToBounds = true
+        eventLabelOne.layer.cornerRadius = 8.0
+        
+        eventLabelTwo.layer.masksToBounds = true
+        eventLabelTwo.layer.cornerRadius = 8.0
+        
+        eventLabelThree.layer.masksToBounds = true
+        eventLabelThree.layer.cornerRadius = 8.0
+        
+        eventLabelFour.layer.masksToBounds = true
+        eventLabelFour.layer.cornerRadius = 8.0
     }
-
-
 }
 
