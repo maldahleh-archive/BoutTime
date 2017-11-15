@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GameScreen {
     @IBOutlet weak var eventLabelOne: UILabel!
     @IBOutlet weak var eventLabelTwo: UILabel!
     @IBOutlet weak var eventLabelThree: UILabel!
@@ -41,3 +41,6 @@ class ViewController: UIViewController {
     }
 }
 
+protocol GameScreen {
+    
+}
