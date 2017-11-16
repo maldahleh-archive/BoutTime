@@ -42,5 +42,8 @@ class ViewController: UIViewController, GameScreen {
 }
 
 protocol GameScreen {
-    
+    weak var eventLabelOne: UILabel! { get set }
+    weak var eventLabelTwo: UILabel! { get set }
+    weak var eventLabelThree: UILabel! { get set }
+    weak var eventLabelFour: UILabel! { get set }
 }
