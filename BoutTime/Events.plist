@@ -4,6 +4,158 @@
 <array>
 	<dict>
 		<key>event</key>
+		<string>Syrian Civil War</string>
+		<key>year</key>
+		<integer>2011</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Syrian_Civil_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Rwandan Genocide</string>
+		<key>year</key>
+		<integer>1994</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Rwandan_genocide</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Yugoslav Wars</string>
+		<key>year</key>
+		<integer>1991</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Yugoslav_Wars</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Gulf War</string>
+		<key>year</key>
+		<integer>1990</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Gulf_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Iran-Iraq War</string>
+		<key>year</key>
+		<integer>1980</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Iran–Iraq_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Soviet-Afghan War</string>
+		<key>year</key>
+		<integer>1970</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Soviet–Afghan_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Six-Day War</string>
+		<key>year</key>
+		<integer>1967</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Six-Day_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Cuban Revolution</string>
+		<key>year</key>
+		<integer>1959</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Cuban_Revolution</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Suez Crisis</string>
+		<key>year</key>
+		<integer>1956</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Suez_Crisis</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>First Sudanese Civil War</string>
+		<key>year</key>
+		<integer>1955</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/First_Sudanese_Civil_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Algerian War</string>
+		<key>year</key>
+		<integer>1954</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Algerian_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Korean War</string>
+		<key>year</key>
+		<integer>1950</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Korean_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Arab-Israeli War</string>
+		<key>year</key>
+		<integer>1948</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/1948_Arab–Israeli_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Fiest Indochina War</string>
+		<key>year</key>
+		<integer>1946</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/First_Indochina_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Cold War</string>
+		<key>year</key>
+		<integer>1945</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Cold_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>World War II</string>
+		<key>year</key>
+		<integer>1939</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/World_War_II</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Spanish Civil War</string>
+		<key>year</key>
+		<integer>1936</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Spanish_Civil_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Second Italo-Ethiopian War</string>
+		<key>year</key>
+		<integer>1935</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Holocaust</string>
+		<key>year</key>
+		<integer>1933</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/The_Holocaust</string>
+	</dict>
+	<dict>
+		<key>event</key>
 		<string>Chinese Civil War</string>
 		<key>year</key>
 		<integer>1927</integer>
