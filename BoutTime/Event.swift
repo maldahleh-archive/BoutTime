@@ -12,8 +12,12 @@ protocol Events {
     var eventMonth: Int { get }
 }
 
-struct Event: Events {
+struct Event: Events, Equatable {
     let eventDescription: String
     let eventYear: Int
     let eventMonth: Int
+    
+    static func ==(lhs: Event, rhs: Event) -> Bool {
+        return lhs.eventDescription == rhs.eventDescription && lhs.eventMonth == rhs.eventMonth && lhs.eventYear == rhs.eventYear
+    }
 }
