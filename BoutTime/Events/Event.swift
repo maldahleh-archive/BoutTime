@@ -9,15 +9,15 @@
 protocol Events {
     var eventDescription: String { get }
     var eventYear: Int { get }
-    var eventMonth: Int { get }
+    var eventURL: String { get }
 }
 
 struct Event: Events, Equatable {
     let eventDescription: String
     let eventYear: Int
-    let eventMonth: Int
+    let eventURL: String
     
     static func ==(lhs: Event, rhs: Event) -> Bool {
-        return lhs.eventDescription == rhs.eventDescription && lhs.eventMonth == rhs.eventMonth && lhs.eventYear == rhs.eventYear
+        return lhs.eventDescription == rhs.eventDescription && lhs.eventYear == rhs.eventYear
     }
 }
