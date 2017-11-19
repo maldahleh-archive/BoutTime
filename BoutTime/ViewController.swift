@@ -39,6 +39,17 @@ class ViewController: UIViewController, GameScreen {
         eventLabelFour.layer.masksToBounds = true
         eventLabelFour.layer.cornerRadius = 8.0
     }
+    
+    // MARK: Shake functions
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            // FIXME: Handle shaking
+        }
+    }
 }
 
 protocol GameScreen {
