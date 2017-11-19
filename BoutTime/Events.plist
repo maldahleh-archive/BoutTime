@@ -3,8 +3,92 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>New item</key>
-		<string></string>
+		<key>event</key>
+		<string>Chinese Civil War</string>
+		<key>year</key>
+		<integer>1927</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Chinese_Civil_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Irish War of Independence</string>
+		<key>year</key>
+		<integer>1919</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Irish_War_of_Independence</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Russian Civil War</string>
+		<key>year</key>
+		<integer>1918</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Russian_Civil_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Russian Revolution</string>
+		<key>year</key>
+		<real>1917</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Russian_Revolution</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Armenian Genoicide</string>
+		<key>year</key>
+		<integer>1915</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Armenian_Genocide</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>World War I</string>
+		<key>year</key>
+		<integer>1914</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/World_War_I</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Second Balkan War</string>
+		<key>year</key>
+		<integer>1913</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Second_Balkan_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>First Balkan War</string>
+		<key>year</key>
+		<integer>1912</integer>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/First_Balkan_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Russo-Japanese War</string>
+		<key>year</key>
+		<real>1904</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Russo-Japanese_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Second Boer War</string>
+		<key>year</key>
+		<real>1899</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Second_Boer_War</string>
+	</dict>
+	<dict>
+		<key>event</key>
+		<string>Boxer Rebellion </string>
+		<key>year</key>
+		<real>1898</real>
+		<key>url</key>
+		<string>https://en.wikipedia.org/wiki/Boxer_Rebellion</string>
 	</dict>
 </array>
 </plist>
