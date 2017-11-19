@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum ReaderError: Error {
-    case invalidResource
-    case conversionFailure
+enum ReaderError: String, Error {
+    case invalidResource = "Invalid Resource"
+    case conversionFailure = "Conversion Failure"
 }
 
 class PListConvertor {
@@ -28,7 +28,7 @@ class PListConvertor {
 }
 
 class EventListBuilder {
-    static func eventist(fromArray array: [[String: AnyObject]]) throws -> [Event] {
+    static func eventList(fromArray array: [[String: AnyObject]]) throws -> [Event] {
         var events: [Event] = []
         
         for event in array {
