@@ -52,7 +52,7 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func displayEventsOnLabels() {
-        let currentEvents = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
+        let currentEvents = gameManager.eventsInLabels
         
         eventLabelOne.text = currentEvents[0].eventDescription
         eventLabelTwo.text = currentEvents[1].eventDescription
@@ -62,10 +62,12 @@ class ViewController: UIViewController, GameScreen, Resetable {
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {
         gameManager.updateEventUpFromPosition(sender.tag)
+        displayEventsOnLabels()
     }
     
     @IBAction func downBtnClicked(_ sender: UIButton) {
         gameManager.updateEventDownFromPosition(sender.tag)
+        displayEventsOnLabels()
     }
     
     // MARK: Shake functions

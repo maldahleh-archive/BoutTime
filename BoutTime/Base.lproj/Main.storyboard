@@ -61,7 +61,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-lT-2yM" userLabel="secondEventButtons">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEv-PN-hmy" userLabel="secondBoxUp">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEv-PN-hmy" userLabel="secondBoxUp">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="0mp-FL-AVf"/>
@@ -103,7 +103,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-Yl-cwH" userLabel="thirdEventButtons">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-EX-lyy" userLabel="thirdBoxUp">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-EX-lyy" userLabel="thirdBoxUp">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="coQ-BC-0aA"/>
@@ -142,7 +142,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-ll-qgL" userLabel="fourthBoxUp">
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-ll-qgL" userLabel="fourthBoxUp">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="123.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="8Sr-Xe-dM8"/>

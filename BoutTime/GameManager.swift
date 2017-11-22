@@ -38,9 +38,21 @@ class GameManager: Playable, Updater, Resetable {
     // MARK: Functions related to the movement of labels
     func updateEventUpFromPosition(_ originalPosition: Int) {
         let newPosition = originalPosition - 1
+        
+        let movedUp = eventsInLabels[originalPosition]
+        let movedDown = eventsInLabels[newPosition]
+        
+        eventsInLabels[originalPosition] = movedDown
+        eventsInLabels[newPosition] = movedUp
     }
     
     func updateEventDownFromPosition(_ originalPosition: Int) {
         let newPosition = originalPosition + 1
+        
+        let movedDown = eventsInLabels[originalPosition]
+        let movedUp = eventsInLabels[newPosition]
+        
+        eventsInLabels[originalPosition] = movedUp
+        eventsInLabels[newPosition] = movedDown
     }
 }
