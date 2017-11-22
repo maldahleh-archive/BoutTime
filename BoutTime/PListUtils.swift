@@ -8,10 +8,16 @@
 
 import Foundation
 
+
+/// Errors used when parsing Event Plist file
+///
+/// - invalidResource: file does not exist
+/// - conversionFailure: file does not have correct syntax
 enum ReaderError: String, Error {
     case invalidResource = "Invalid Resource"
     case conversionFailure = "Conversion Failure"
 }
+
 
 class PListConvertor {
     static func array(fromFile name: String, ofType type: String) throws -> [[String: AnyObject]] {
