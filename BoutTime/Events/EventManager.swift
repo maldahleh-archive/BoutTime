@@ -30,7 +30,7 @@ class EventManager: Resetable {
     func doesMatchFor(array: [Event], round: Int) -> Bool {
         let eventArray = getEventSetFor(round: round).sort()
         
-        for index in 0...eventArray.count {
+        for index in 0..<eventArray.count {
             if eventArray[index] != array [index] {
                 return false
             }
