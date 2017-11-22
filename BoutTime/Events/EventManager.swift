@@ -14,7 +14,6 @@ protocol Sortable {
 
 class EventManager: Resetable {
     let eventList: [Event]
-    
     var roundSet: [EventSet] = []
     
     init() {
@@ -28,6 +27,18 @@ class EventManager: Resetable {
         }
         
         newGame()
+    }
+    
+    func doesMatchFor(array: [Event], round: Int) -> Bool {
+        let eventArray = getEventSetFor(round: round).sort()
+        
+        for index in 0...eventArray.count {
+            if eventArray[index] != array [index] {
+                return false
+            }
+        }
+        
+        return true
     }
     
     func getEventSetFor(round: Int) -> EventSet {
