@@ -8,12 +8,15 @@
 
 import Foundation
 
-protocol Manager {
+protocol MainManager {
+    var eventManager: EventManager { get }
     var viewManager: GameScreen { get }
 }
 
 protocol Playable {
     var currentRound: Int { get set }
+    
+    func nextRound()
 }
 
 protocol Checkable {
@@ -24,20 +27,28 @@ protocol Resetable {
     func newGame()
 }
 
-class GameManager: Manager, Playable, Checkable, Resetable {
+class GameManager: MainManager, Playable, Checkable, Resetable {
+    let eventManager: EventManager
     let viewManager: GameScreen
     var currentRound: Int
     
-    init (viewManager: GameScreen) {
+    init (eventManager: EventManager, viewManager: GameScreen) {
+        self.eventManager = eventManager
         self.viewManager = viewManager
-        newGame()
+        self.currentRound = 1
     }
     
     func newGame() {
         currentRound = 1
     }
     
+    func nextRound() {
+        currentRound += 1
+    }
+    
     func isMatched(checkArray: [Event]) -> Bool {
+        let eventArray = eventManager.getEventSetFor(round: currentRound).eventSet
+        
         for index in 0...eventArray.count {
             if eventArray[index] != checkArray [index] {
                 return false
