@@ -30,6 +30,9 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func newGame() {
+        eventManager.newGame()
+        gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
+        
         displayEventsOnLabels()
     }
 

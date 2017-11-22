@@ -25,8 +25,6 @@ class EventManager: Resetable {
         } catch {
             fatalError("Unknown error, \(error.localizedDescription)")
         }
-        
-        newGame()
     }
     
     func doesMatchFor(array: [Event], round: Int) -> Bool {

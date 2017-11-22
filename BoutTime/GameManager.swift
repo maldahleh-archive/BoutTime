@@ -8,6 +8,7 @@
 
 protocol Playable {
     var currentRound: Int { get set }
+    var eventsInLabels: [Event] { get set }
     
     func nextRound()
 }
@@ -17,11 +18,8 @@ protocol Resetable {
 }
 
 class GameManager: Playable, Resetable {
-    var currentRound: Int
-    
-    init () {
-        self.currentRound = 1
-    }
+    var currentRound: Int = 1
+    var eventsInLabels: [Event] = []
     
     func newGame() {
         currentRound = 1
