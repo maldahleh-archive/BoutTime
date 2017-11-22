@@ -13,7 +13,7 @@ protocol Manager {
 }
 
 protocol Playable {
-    var eventArray: [Event] { get set }
+    var currentRound: Int { get set }
 }
 
 protocol Checkable {
@@ -26,15 +26,15 @@ protocol Resetable {
 
 class GameManager: Manager, Playable, Checkable, Resetable {
     let viewManager: GameScreen
-    var eventArray: [Event]
+    var currentRound: Int
     
     init (viewManager: GameScreen) {
         self.viewManager = viewManager
-        self.eventArray = []
+        newGame()
     }
     
     func newGame() {
-        
+        currentRound = 1
     }
     
     func isMatched(checkArray: [Event]) -> Bool {

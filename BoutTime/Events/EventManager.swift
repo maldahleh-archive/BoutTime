@@ -31,7 +31,7 @@ class EventManager: Resetable {
     }
     
     func getEventSetFor(round: Int) -> EventSet {
-        return roundSet[round]
+        return roundSet[round - 1]
     }
     
     func newGame() {
