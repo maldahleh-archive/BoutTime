@@ -6,12 +6,6 @@
 //  Copyright © 2017 Mohammed Al-Dahleh. All rights reserved.
 //
 
-import Foundation
-
-protocol MainManager {
-    var viewManager: GameScreen { get }
-}
-
 protocol Playable {
     var currentRound: Int { get set }
     
@@ -22,12 +16,10 @@ protocol Resetable {
     func newGame()
 }
 
-class GameManager: MainManager, Playable, Resetable {
-    let viewManager: GameScreen
+class GameManager: Playable, Resetable {
     var currentRound: Int
     
-    init (viewManager: GameScreen) {
-        self.viewManager = viewManager
+    init () {
         self.currentRound = 1
     }
     

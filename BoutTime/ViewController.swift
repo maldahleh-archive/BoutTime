@@ -8,21 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController, GameScreen {
+class ViewController: UIViewController, GameScreen, Resetable {
     @IBOutlet weak var eventLabelOne: UILabel!
     @IBOutlet weak var eventLabelTwo: UILabel!
     @IBOutlet weak var eventLabelThree: UILabel!
     @IBOutlet weak var eventLabelFour: UILabel!
+    
+    let gameManager = GameManager()
+    let eventManager = EventManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         prepareUI()
+        newGame()
     }
     
     // MARK: UI related methods
     func prepareUI() {
         roundLabelCorners()
+    }
+    
+    func newGame() {
+        displayEventsOnLabels()
     }
 
     // MARK: UI Helper methods
@@ -38,6 +46,15 @@ class ViewController: UIViewController, GameScreen {
         
         eventLabelFour.layer.masksToBounds = true
         eventLabelFour.layer.cornerRadius = 8.0
+    }
+    
+    func displayEventsOnLabels() {
+        let currentEvents = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
+        
+        eventLabelOne.text = currentEvents[0].eventDescription
+        eventLabelTwo.text = currentEvents[1].eventDescription
+        eventLabelThree.text = currentEvents[2].eventDescription
+        eventLabelFour.text = currentEvents[3].eventDescription
     }
     
     // MARK: Shake functions
@@ -57,4 +74,6 @@ protocol GameScreen {
     weak var eventLabelTwo: UILabel! { get set }
     weak var eventLabelThree: UILabel! { get set }
     weak var eventLabelFour: UILabel! { get set }
+    
+    func displayEventsOnLabels()
 }
