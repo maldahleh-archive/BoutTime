@@ -61,17 +61,11 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {
-        switch sender.tag {
-        case 1:
-            
-        case 2:
-        case 3:
-        default: fatalError("Unknown Case!")
-        }
+        gameManager.updateEventUpFromPosition(sender.tag)
     }
     
-    @IBAction func downBtnClicked(_ sender: Any) {
-        
+    @IBAction func downBtnClicked(_ sender: UIButton) {
+        gameManager.updateEventDownFromPosition(sender.tag)
     }
     
     // MARK: Shake functions

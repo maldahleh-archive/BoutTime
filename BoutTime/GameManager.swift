@@ -14,18 +14,12 @@ protocol Playable {
 }
 
 protocol Updater {
-    func updateEventLocationFrom(original: Int, to: Int, withDirection direction: Direction)
-    func updateEventUpFrom(original: Int, to: Int)
-    func updateEventDownFrom(original: Int, to: Int)
+    func updateEventUpFromPosition(_ originalPosition: Int)
+    func updateEventDownFromPosition(_ originalPosition: Int)
 }
 
 protocol Resetable {
     func newGame()
-}
-
-enum Direction {
-    case up
-    case down
 }
 
 class GameManager: Playable, Updater, Resetable {
@@ -42,15 +36,11 @@ class GameManager: Playable, Updater, Resetable {
     }
     
     // MARK: Functions related to the movement of labels
-    func updateEventLocationFrom(original: Int, to: Int, withDirection direction: Direction) {
-        
+    func updateEventUpFromPosition(_ originalPosition: Int) {
+        let newPosition = originalPosition - 1
     }
     
-    func updateEventUpFrom(original: Int, to: Int) {
-        
-    }
-    
-    func updateEventDownFrom(original: Int, to: Int) {
-        
+    func updateEventDownFromPosition(_ originalPosition: Int) {
+        let newPosition = originalPosition + 1
     }
 }
