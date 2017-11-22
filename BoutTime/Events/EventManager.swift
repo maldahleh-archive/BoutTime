@@ -69,8 +69,8 @@ struct EventSet: Sortable {
         
         var earliestIndex: Int = -1
         while unsortedList.count != 0 {
-            for index in 0...unsortedList.count {
-                if index == -1 {
+            for index in 0..<unsortedList.count {
+                if earliestIndex == -1 {
                     earliestIndex = index
                 } else {
                     if unsortedList[index].eventYear < unsortedList[earliestIndex].eventYear {

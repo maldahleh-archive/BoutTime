@@ -67,7 +67,13 @@ class ViewController: UIViewController, GameScreen, Resetable {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            // FIXME: Handle shaking
+            if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
+                print("Correct")
+                // FIXME: Correct
+            } else {
+                print("Wrong")
+                // FIXME: Wrong
+            }
         }
     }
 }
