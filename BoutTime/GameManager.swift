@@ -13,19 +13,44 @@ protocol Playable {
     func nextRound()
 }
 
+protocol Updater {
+    func updateEventLocationFrom(original: Int, to: Int, withDirection direction: Direction)
+    func updateEventUpFrom(original: Int, to: Int)
+    func updateEventDownFrom(original: Int, to: Int)
+}
+
 protocol Resetable {
     func newGame()
 }
 
-class GameManager: Playable, Resetable {
+enum Direction {
+    case up
+    case down
+}
+
+class GameManager: Playable, Updater, Resetable {
     var currentRound: Int = 1
     var eventsInLabels: [Event] = []
     
     func newGame() {
         currentRound = 1
+        eventsInLabels = []
     }
     
     func nextRound() {
         currentRound += 1
+    }
+    
+    // MARK: Functions related to the movement of labels
+    func updateEventLocationFrom(original: Int, to: Int, withDirection direction: Direction) {
+        
+    }
+    
+    func updateEventUpFrom(original: Int, to: Int) {
+        
+    }
+    
+    func updateEventDownFrom(original: Int, to: Int) {
+        
     }
 }

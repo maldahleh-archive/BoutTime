@@ -59,6 +59,20 @@ class ViewController: UIViewController, GameScreen, Resetable {
         eventLabelThree.text = currentEvents[2].eventDescription
         eventLabelFour.text = currentEvents[3].eventDescription
     }
+    // MARK: Event movement action methods
+    @IBAction func upBtnClicked(_ sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            
+        case 2:
+        case 3:
+        default: fatalError("Unknown Case!")
+        }
+    }
+    
+    @IBAction func downBtnClicked(_ sender: Any) {
+        
+    }
     
     // MARK: Shake functions
     override func becomeFirstResponder() -> Bool {

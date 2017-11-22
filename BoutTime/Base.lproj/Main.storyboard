@@ -39,6 +39,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="lfW-fL-aVv"/>
                                                 </constraints>
                                                 <state key="normal" image="down_full"/>
+                                                <connections>
+                                                    <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KQ-QV-lif"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -65,6 +68,9 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="YEL-IN-Be1"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0S-GN-f4G"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-G3-wOo" userLabel="secondBoxDown">
                                                         <rect key="frame" x="0.0" y="62" width="40" height="61.5"/>
@@ -73,6 +79,9 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tXs-sS-Nk7"/>
                                                         </constraints>
                                                         <state key="normal" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5X-Rg-cth"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -101,6 +110,9 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lHy-e8-bv4"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaJ-2d-CMJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-YG-9Tx" userLabel="thirdBoxDown">
                                                         <rect key="frame" x="0.0" y="62" width="40" height="61.5"/>
@@ -109,6 +121,9 @@
                                                             <constraint firstAttribute="width" constant="40" id="qrM-A6-B2a"/>
                                                         </constraints>
                                                         <state key="normal" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCe-iX-DPJ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -134,6 +149,9 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="HmW-DP-ZLs"/>
                                                 </constraints>
                                                 <state key="normal" image="up_full"/>
+                                                <connections>
+                                                    <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGi-wD-Gvs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
