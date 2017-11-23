@@ -9,6 +9,7 @@
 protocol Playable {
     var currentRound: Int { get set }
     var eventsInLabels: [Event] { get set }
+    var isRoundActive: Bool { get set }
     
     func nextRound()
 }
@@ -25,6 +26,7 @@ protocol Resetable {
 class GameManager: Playable, Updater, Resetable {
     var currentRound: Int = 1
     var eventsInLabels: [Event] = []
+    var isRoundActive: Bool = true
     
     func newGame() {
         currentRound = 1

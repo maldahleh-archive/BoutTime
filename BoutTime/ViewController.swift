@@ -84,7 +84,7 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        if motion == .motionShake {
+        if motion == .motionShake && gameManager.isRoundActive {
             solutionButton.isHidden = false
             // FIXME: End timer, make sure timer label is hidden
             
