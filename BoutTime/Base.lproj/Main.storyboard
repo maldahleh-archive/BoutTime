@@ -178,10 +178,21 @@
                                 <color key="textColor" red="0.30735862255096436" green="0.55657804012298584" blue="0.69809818267822266" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30w-8X-UGD">
+                                <rect key="frame" x="98.5" y="566" width="178" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="WBK-mB-sAP"/>
+                                    <constraint firstAttribute="height" constant="56" id="Y5j-4X-H0a"/>
+                                </constraints>
+                                <state key="normal" image="next_round_fail"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.044716645032167435" green="0.16059233248233795" blue="0.28638553619384766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="30w-8X-UGD" firstAttribute="top" secondItem="pco-s9-0QS" secondAttribute="bottom" constant="8" id="7qY-6F-w4F"/>
+                            <constraint firstItem="30w-8X-UGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E3O-uX-YtM"/>
                             <constraint firstItem="3rJ-am-S2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iw2-sJ-gBn"/>
+                            <constraint firstItem="3rJ-am-S2f" firstAttribute="top" secondItem="30w-8X-UGD" secondAttribute="bottom" constant="4.5" id="WKa-wp-KkX"/>
                             <constraint firstItem="3rJ-am-S2f" firstAttribute="top" secondItem="tO0-j3-dT3" secondAttribute="bottom" constant="8.5" id="X3y-zD-Eg5"/>
                             <constraint firstItem="pco-s9-0QS" firstAttribute="bottom" secondItem="tO0-j3-dT3" secondAttribute="top" constant="-20" id="gUw-Uf-rFU"/>
                             <constraint firstItem="tO0-j3-dT3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jMO-uN-Bmg"/>
@@ -197,6 +208,9 @@
                         <outlet property="eventLabelOne" destination="TCK-1F-Dj9" id="Tqt-3J-X2I"/>
                         <outlet property="eventLabelThree" destination="J14-Ga-Hhl" id="tS9-88-L0Y"/>
                         <outlet property="eventLabelTwo" destination="lqt-Ql-pn1" id="c5c-iu-B4L"/>
+                        <outlet property="informationLabel" destination="3rJ-am-S2f" id="5Kt-tH-Bra"/>
+                        <outlet property="solutionButton" destination="30w-8X-UGD" id="3tg-9S-Rpg"/>
+                        <outlet property="timeLeftLabel" destination="tO0-j3-dT3" id="KVJ-cG-WmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -207,6 +221,7 @@
     <resources>
         <image name="down_full" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
+        <image name="next_round_fail" width="558" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
     </resources>

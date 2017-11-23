@@ -14,6 +14,10 @@ class ViewController: UIViewController, GameScreen, Resetable {
     @IBOutlet weak var eventLabelThree: UILabel!
     @IBOutlet weak var eventLabelFour: UILabel!
     
+    @IBOutlet weak var timeLeftLabel: UILabel!
+    @IBOutlet weak var solutionButton: UIButton!
+    @IBOutlet weak var informationLabel: UILabel!
+    
     let gameManager = GameManager()
     let eventManager = EventManager()
 
@@ -33,6 +37,10 @@ class ViewController: UIViewController, GameScreen, Resetable {
         eventManager.newGame()
         gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
         
+        // FIXME: Start timer, make sure label is enabled
+        
+        solutionButton.isHidden = true
+        informationLabel.text = "Shake to complete"
         displayEventsOnLabels()
     }
 
@@ -77,11 +85,14 @@ class ViewController: UIViewController, GameScreen, Resetable {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
+            solutionButton.isHidden = false
+            // FIXME: End timer, make sure timer label is hidden
+            
             if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
-                print("Correct")
+                solutionButton.setImage(UIImage(named: "next_round_success"), for: .normal)
                 // FIXME: Correct
             } else {
-                print("Wrong")
+                solutionButton.setImage(UIImage(named: "next_round_fail"), for: .normal)
                 // FIXME: Wrong
             }
         }
