@@ -101,27 +101,44 @@ class ViewController: UIViewController {
         displayEventsOnLabels()
     }
     
+    // MARK: Segue methods to transition to other view controllers
     @IBAction func nextRoundClicked(_ sender: Any) {
+        if gameManager.currentRound == 6 {
+            performSegue(withIdentifier: "toScore", sender: nil)
+            return
+        }
+        
         gameManager.currentRound += 1
         newRound()
     }
     
-    // MARK: Methods pertaining to transitioning to the web view controller
     @IBAction func eventBtnClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "toWebView", sender: sender.tag)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let eventIndex = sender as? Int else {
-            return
-        }
-        
-        guard let destinationVC = segue.destination as? WebViewController else {
-            return
-        }
-        
-        if let identifier = segue.identifier, identifier == "toWebView" {
-            destinationVC.webURL = gameManager.eventsInLabels[eventIndex].eventURL
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "toWebView":
+                guard let eventIndex = sender as? Int else {
+                    return
+                }
+                
+                guard let destinationVC = segue.destination as? WebViewController else {
+                    return
+                }
+                
+                destinationVC.webURL = gameManager.eventsInLabels[eventIndex].eventURL
+                break
+            case "toScore":
+                guard let destinationVC = segue.destination as? ScoreViewController else {
+                    return
+                }
+                
+                destinationVC.userScore = gameManager.getScore()
+                break
+            default: return
+            }
         }
     }
     
