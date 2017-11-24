@@ -32,13 +32,7 @@ class ViewController: UIViewController, GameScreen, Resetable {
     // MARK: UI related methods
     func newGame() {
         eventManager.newGame()
-        gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
-        
-        // FIXME: Start timer, make sure label is enabled
-        
-        solutionButton.isHidden = true
-        informationLabel.text = "Shake to complete"
-        displayEventsOnLabels()
+        updateUIfor(state: .newRound)
     }
 
     // MARK: UI Helper methods
@@ -52,12 +46,24 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func updateUIfor(state: UIState) {
+        switch state {
+        case .newRound:
+            gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
+            
+            timer.runTimerWith(selector: #selector(timerTicked), onObject: self)
+            timeLeftLabel.isHidden = false
+            
+            solutionButton.isHidden = true
+            informationLabel.text = "Shake to complete"
+            displayEventsOnLabels()
+            
+        }
     }
     
     // MARK: Timer methods
-    func timerTicked() {
-        if timer.currentSeconds > 0 {
-            timeLeftLabel.text = "0:" + String(timer.currentSeconds)
+    @objc func timerTicked() {
+        if timer.currentSeconds > -1 {
+            timeLeftLabel.text = NumberUtils.clean(num: timer.currentSeconds)
             timer.currentSeconds = timer.currentSeconds - 1
         } else {
             timer.cancelTimer()
@@ -66,7 +72,6 @@ class ViewController: UIViewController, GameScreen, Resetable {
     
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {
-        
         gameManager.updateEventUpFromPosition(sender.tag)
         displayEventsOnLabels()
     }

@@ -7,5 +7,5 @@
 //
 
 enum UIState {
-    case gameStarting
+    case newRound
 }
