@@ -97,6 +97,15 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		4A60A6361FC7E0C7008C7D8D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
+				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		4A7BB9851FB22EF300BC1C41 = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +127,11 @@
 			children = (
 				4A7BB9981FB22EF300BC1C41 /* Assets.xcassets */,
 				4A48B2F71FC7BE7E005730C4 /* ViewControllers */,
+				4A60A6361FC7E0C7008C7D8D /* Game */,
 				4A04CA1F1FC21A10002C01BA /* Events */,
 				4A48B2F81FC7CC16005730C4 /* Sound */,
 				4A48B2F21FC7A153005730C4 /* Utils */,
 				4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */,
-				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
-				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
 				4A7BB9951FB22EF300BC1C41 /* Main.storyboard */,
 				4A7BB99A1FB22EF300BC1C41 /* LaunchScreen.storyboard */,
 				4A7BB99D1FB22EF300BC1C41 /* Info.plist */,
