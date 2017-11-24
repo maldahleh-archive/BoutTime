@@ -13,12 +13,10 @@ class AudioManager {
     var rightAnswerSound: SystemSoundID = 0
     var wrongAnswerSound: SystemSoundID = 1
     
-    // Initalize the manager by loading the sounds
     init () {
         loadSounds()
     }
     
-    // Load all the needed sounds
     func loadSounds() {
         var pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
         var soundURL = URL(fileURLWithPath: pathToSoundFile!)

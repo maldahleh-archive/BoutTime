@@ -43,6 +43,7 @@ class EventManager: Resetable {
         return roundSet[round - 1]
     }
     
+    // Generate new random event list
     func newGame() {
         var toSort = eventList
         var createdEventSet: [Event] = []
@@ -63,6 +64,7 @@ class EventManager: Resetable {
 struct EventSet: Sortable {
     let eventSet: [Event]
     
+    // Return a sorted event list by year
     func sort() -> [Event] {
         var unsortedList = eventSet
         var sortedList: [Event] = []
