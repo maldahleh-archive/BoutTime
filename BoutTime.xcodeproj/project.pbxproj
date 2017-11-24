@@ -14,6 +14,9 @@
 		4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */; };
 		4A48B2F41FC7ACDB005730C4 /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */; };
 		4A48B2F61FC7BE58005730C4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F51FC7BE58005730C4 /* WebViewController.swift */; };
+		4A48B2FA1FC7CC2C005730C4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F91FC7CC2C005730C4 /* AudioManager.swift */; };
+		4A48B2FD1FC7CC4F005730C4 /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4A48B2FB1FC7CC4F005730C4 /* IncorrectBuzz.wav */; };
+		4A48B2FE1FC7CC4F005730C4 /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4A48B2FC1FC7CC4F005730C4 /* CorrectDing.wav */; };
 		4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */; };
 		4A7BB9941FB22EF300BC1C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9931FB22EF300BC1C41 /* ViewController.swift */; };
 		4A7BB9971FB22EF300BC1C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BB9951FB22EF300BC1C41 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 		4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
 		4A48B2F51FC7BE58005730C4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4A48B2F91FC7CC2C005730C4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		4A48B2FB1FC7CC4F005730C4 /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IncorrectBuzz.wav; sourceTree = "<group>"; };
+		4A48B2FC1FC7CC4F005730C4 /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CorrectDing.wav; sourceTree = "<group>"; };
 		4A7BB98E1FB22EF300BC1C41 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7BB9931FB22EF300BC1C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,16 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		4A48B2F81FC7CC16005730C4 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4A48B2F91FC7CC2C005730C4 /* AudioManager.swift */,
+				4A48B2FC1FC7CC4F005730C4 /* CorrectDing.wav */,
+				4A48B2FB1FC7CC4F005730C4 /* IncorrectBuzz.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		4A7BB9851FB22EF300BC1C41 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +119,7 @@
 				4A7BB9981FB22EF300BC1C41 /* Assets.xcassets */,
 				4A48B2F71FC7BE7E005730C4 /* ViewControllers */,
 				4A04CA1F1FC21A10002C01BA /* Events */,
+				4A48B2F81FC7CC16005730C4 /* Sound */,
 				4A48B2F21FC7A153005730C4 /* Utils */,
 				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
 				4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */,
@@ -175,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7BB99C1FB22EF300BC1C41 /* LaunchScreen.storyboard in Resources */,
+				4A48B2FE1FC7CC4F005730C4 /* CorrectDing.wav in Resources */,
+				4A48B2FD1FC7CC4F005730C4 /* IncorrectBuzz.wav in Resources */,
 				4A7BB9991FB22EF300BC1C41 /* Assets.xcassets in Resources */,
 				4A7BB9971FB22EF300BC1C41 /* Main.storyboard in Resources */,
 				4A04CA211FC21AB5002C01BA /* Events.plist in Resources */,
@@ -197,6 +216,7 @@
 				4A48B2F41FC7ACDB005730C4 /* NumberUtils.swift in Sources */,
 				4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */,
 				4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */,
+				4A48B2FA1FC7CC2C005730C4 /* AudioManager.swift in Sources */,
 				4A48B2EF1FC79C2A005730C4 /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

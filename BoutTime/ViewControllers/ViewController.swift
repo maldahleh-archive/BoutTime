@@ -16,6 +16,7 @@ class ViewController: UIViewController, Resetable {
     @IBOutlet weak var solutionButton: UIButton!
     @IBOutlet weak var informationLabel: UILabel!
     
+    let audioManager = AudioManager()
     let gameManager = GameManager()
     let eventManager = EventManager()
     let timer = GameTimer()
@@ -53,10 +54,8 @@ class ViewController: UIViewController, Resetable {
     func displayEventsOnLabels() {
         let currentEvents = gameManager.eventsInLabels
         
-        for eventButton in eventButtons {
-            if let button = eventButton as? UIButton {
-                button.setTitle(currentEvents[button.tag], for: .normal)
-            }
+        for button in eventButtons {
+            button.setTitle(currentEvents[button.tag].eventDescription, for: .normal)
         }
     }
     
@@ -72,9 +71,11 @@ class ViewController: UIViewController, Resetable {
         informationLabel.text = "Tap events to learn more"
         
         if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
+            audioManager.playRightAnswerSound()
             solutionButton.setImage(UIImage(named: "next_round_success"), for: .normal)
             gameManager.logRound(won: true)
         } else {
+            audioManager.playWrongAnswerSound()
             solutionButton.setImage(UIImage(named: "next_round_fail"), for: .normal)
             gameManager.logRound(won: false)
         }
