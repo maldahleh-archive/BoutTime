@@ -10,20 +10,13 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController, WKUIDelegate {
-    var webView: WKWebView!
-    var webURL: String?
+    @IBOutlet weak var webView: WKWebView!
     
-    override func loadView() {
-        let webConfig = WKWebViewConfiguration()
-        
-        webView = WKWebView(frame: .zero, configuration: webConfig)
-        webView.uiDelegate = self
-        
-        view = webView
-    }
+    var webURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView.uiDelegate = self
         
         if let url = webURL, let eventUrl = URL(string: url) {
             let webRequest = URLRequest(url: eventUrl)
