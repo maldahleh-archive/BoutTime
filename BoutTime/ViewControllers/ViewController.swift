@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, Resetable {    
+class ViewController: UIViewController {    
     @IBOutlet var eventButtons: [UIButton]!
     @IBOutlet var navigationButtons: [UIButton]!
     
@@ -24,17 +24,13 @@ class ViewController: UIViewController, Resetable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newGame()
-    }
-    
-    // MARK: UI related methods
-    func newGame() {
         gameManager.newGame()
         eventManager.newGame()
         
         newRound()
     }
     
+    // MARK: UI related methods
     func newRound() {
         UIUtils.set(interaction: false, for: eventButtons)
         UIUtils.set(interaction: true, for: navigationButtons)
@@ -50,8 +46,7 @@ class ViewController: UIViewController, Resetable {
         informationLabel.text = "Shake to complete"
         displayEventsOnLabels()
     }
-
-    // MARK: UI Helper methods
+    
     func displayEventsOnLabels() {
         let currentEvents = gameManager.eventsInLabels
         
@@ -60,6 +55,7 @@ class ViewController: UIViewController, Resetable {
         }
     }
     
+    // MARK: Game related methods
     func checkAndDisplayAnswer() {
         UIUtils.set(interaction: true, for: eventButtons)
         UIUtils.set(interaction: false, for: navigationButtons)
