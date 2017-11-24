@@ -39,6 +39,8 @@
                                                     <constraint firstAttribute="width" constant="40" id="lfW-fL-aVv"/>
                                                 </constraints>
                                                 <state key="normal" image="down_full"/>
+                                                <state key="selected" image="down_full_selected"/>
+                                                <state key="highlighted" image="down_full_selected"/>
                                                 <connections>
                                                     <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KQ-QV-lif"/>
                                                 </connections>
@@ -68,6 +70,8 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="YEL-IN-Be1"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
+                                                        <state key="selected" image="up_half_selected"/>
+                                                        <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
                                                             <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0S-GN-f4G"/>
                                                         </connections>
@@ -79,6 +83,8 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tXs-sS-Nk7"/>
                                                         </constraints>
                                                         <state key="normal" image="down_half"/>
+                                                        <state key="selected" image="down_half_selected"/>
+                                                        <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
                                                             <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5X-Rg-cth"/>
                                                         </connections>
@@ -110,6 +116,8 @@
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lHy-e8-bv4"/>
                                                         </constraints>
                                                         <state key="normal" image="up_half"/>
+                                                        <state key="selected" image="up_half_selected"/>
+                                                        <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
                                                             <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaJ-2d-CMJ"/>
                                                         </connections>
@@ -121,6 +129,8 @@
                                                             <constraint firstAttribute="width" constant="40" id="qrM-A6-B2a"/>
                                                         </constraints>
                                                         <state key="normal" image="down_half"/>
+                                                        <state key="selected" image="down_half_selected"/>
+                                                        <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
                                                             <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCe-iX-DPJ"/>
                                                         </connections>
@@ -149,6 +159,8 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="HmW-DP-ZLs"/>
                                                 </constraints>
                                                 <state key="normal" image="up_full"/>
+                                                <state key="selected" image="up_full_selected"/>
+                                                <state key="highlighted" image="up_full_selected"/>
                                                 <connections>
                                                     <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGi-wD-Gvs"/>
                                                 </connections>
@@ -220,9 +232,13 @@
     </scenes>
     <resources>
         <image name="down_full" width="158" height="457"/>
+        <image name="down_full_selected" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
+        <image name="down_half_selected" width="158" height="229"/>
         <image name="next_round_fail" width="558" height="142"/>
         <image name="up_full" width="158" height="457"/>
+        <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
+        <image name="up_half_selected" width="158" height="229"/>
     </resources>
 </document>

@@ -52,24 +52,21 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func updateUIfor(state: UIState) {
-        switch state {
-        case .gameStarting:
-            
-        }
     }
     
-    //MARK: Timer methods
+    // MARK: Timer methods
     func timerTicked() {
-        if lightningModeSecondsLeft > 0 {
-            timerLabel.text = String(lightningModeSecondsLeft)
-            lightningModeSecondsLeft = lightningModeSecondsLeft - 1
+        if timer.currentSeconds > 0 {
+            timeLeftLabel.text = "0:" + String(timer.currentSeconds)
+            timer.currentSeconds = timer.currentSeconds - 1
         } else {
-            cancelTimerAsTimedOut(true)
+            timer.cancelTimer()
         }
     }
     
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {
+        
         gameManager.updateEventUpFromPosition(sender.tag)
         displayEventsOnLabels()
     }
