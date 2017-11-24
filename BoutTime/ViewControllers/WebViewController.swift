@@ -25,4 +25,8 @@ class WebViewController: UIViewController, WKUIDelegate {
             fatalError("Unable to load URL: \(webURL!)")
         }
     }
+    
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
