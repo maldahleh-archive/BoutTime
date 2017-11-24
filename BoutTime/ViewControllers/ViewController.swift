@@ -8,7 +8,7 @@
 
 import UIKit
 
-// FIXME: Some URLs crash, rounding corners
+// FIXME: rounding corners
 
 class ViewController: UIViewController {    
     @IBOutlet var eventButtons: [UIButton]!

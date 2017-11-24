@@ -18,11 +18,8 @@ class WebViewController: UIViewController, WKUIDelegate {
         super.viewDidLoad()
         webView.uiDelegate = self
         
-        if let url = webURL, let eventUrl = URL(string: url) {
-            let webRequest = URLRequest(url: eventUrl)
-            webView.load(webRequest)
-        } else {
-            fatalError("Unable to load URL: \(webURL!)")
+        if let url = webURL, let encodedURL = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let eventUrl = URL(string: encodedURL) {
+            webView.load(URLRequest(url: eventUrl))
         }
     }
     
