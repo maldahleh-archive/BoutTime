@@ -60,13 +60,31 @@ class ViewController: UIViewController, GameScreen, Resetable {
         }
     }
     
+    func checkAndDisplayAnswer() {
+        gameManager.isRoundActive = false
+        
+        timer.cancelTimer()
+        timeLeftLabel.isHidden = true
+        
+        solutionButton.isHidden = false
+        informationLabel.text = "Tap events to learn more"
+        
+        if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
+            solutionButton.setImage(UIImage(named: "next_round_success"), for: .normal)
+            // FIXME: Correct
+        } else {
+            solutionButton.setImage(UIImage(named: "next_round_fail"), for: .normal)
+            // FIXME: Wrong
+        }
+    }
+    
     // MARK: Timer methods
     @objc func timerTicked() {
         if timer.currentSeconds > -1 {
             timeLeftLabel.text = NumberUtils.clean(num: timer.currentSeconds)
             timer.currentSeconds = timer.currentSeconds - 1
         } else {
-            timer.cancelTimer()
+            checkAndDisplayAnswer()
         }
     }
     
@@ -88,16 +106,7 @@ class ViewController: UIViewController, GameScreen, Resetable {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake && gameManager.isRoundActive {
-            solutionButton.isHidden = false
-            // FIXME: End timer, make sure timer label is hidden
-            
-            if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
-                solutionButton.setImage(UIImage(named: "next_round_success"), for: .normal)
-                // FIXME: Correct
-            } else {
-                solutionButton.setImage(UIImage(named: "next_round_fail"), for: .normal)
-                // FIXME: Wrong
-            }
+            checkAndDisplayAnswer()
         }
     }
 }

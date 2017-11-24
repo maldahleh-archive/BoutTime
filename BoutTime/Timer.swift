@@ -38,9 +38,11 @@ class GameTimer: Counter {
     }
     
     func cancelTimer() {
-        currentSeconds = totalSeconds
+        if timerActive {
+            currentSeconds = totalSeconds
         
-        timer.invalidate()
-        timerActive = false
+            timer.invalidate()
+            timerActive = false
+        }
     }
 }
