@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         newRound()
     }
     
-    // MARK: UI related methods
+    // MARK: Game related methods
     func newRound() {
         UIUtils.set(interaction: false, for: eventButtons)
         UIUtils.set(interaction: true, for: navigationButtons)
@@ -49,15 +49,6 @@ class ViewController: UIViewController {
         displayEventsOnLabels()
     }
     
-    func displayEventsOnLabels() {
-        let currentEvents = gameManager.eventsInLabels
-        
-        for button in eventButtons {
-            button.setTitle(currentEvents[button.tag].eventDescription, for: .normal)
-        }
-    }
-    
-    // MARK: Game related methods
     func checkAndDisplayAnswer() {
         UIUtils.set(interaction: true, for: eventButtons)
         UIUtils.set(interaction: false, for: navigationButtons)
@@ -80,7 +71,6 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: Timer methods
     @objc func timerTicked() {
         if timer.currentSeconds > -1 {
             timeLeftLabel.text = NumberUtils.clean(num: timer.currentSeconds)
@@ -90,7 +80,7 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: Event movement action methods
+    // MARK: Actions for the main UI elements
     @IBAction func upBtnClicked(_ sender: UIButton) {
         gameManager.updateEventUpFromPosition(sender.tag)
         displayEventsOnLabels()
@@ -101,7 +91,6 @@ class ViewController: UIViewController {
         displayEventsOnLabels()
     }
     
-    // MARK: Segue methods to transition to other view controllers
     @IBAction func nextRoundClicked(_ sender: Any) {
         if gameManager.currentRound == 6 {
             performSegue(withIdentifier: "toScore", sender: nil)
@@ -112,6 +101,7 @@ class ViewController: UIViewController {
         newRound()
     }
     
+    // MARK: Segue methods to transition to other view controllers
     @IBAction func eventBtnClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "toWebView", sender: sender.tag)
     }
@@ -150,6 +140,15 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake && gameManager.isRoundActive {
             checkAndDisplayAnswer()
+        }
+    }
+    
+    // MARK: UI related methods
+    func displayEventsOnLabels() {
+        let currentEvents = gameManager.eventsInLabels
+        
+        for button in eventButtons {
+            button.setTitle(currentEvents[button.tag].eventDescription, for: .normal)
         }
     }
 }
