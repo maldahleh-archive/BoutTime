@@ -9,7 +9,6 @@
 import AudioToolbox
 
 class AudioManager {
-    // References to the sounds used
     var rightAnswerSound: SystemSoundID = 0
     var wrongAnswerSound: SystemSoundID = 1
     
