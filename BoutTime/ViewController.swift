@@ -67,6 +67,42 @@ class ViewController: UIViewController, GameScreen, Resetable {
         eventLabelThree.text = currentEvents[2].eventDescription
         eventLabelFour.text = currentEvents[3].eventDescription
     }
+    
+    func updateUIfor(state: UIState) {
+        
+    }
+    
+    //MARK: Timer methods
+    func runTimer() {
+        if !isTimerStarted {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: #selector(timerTicked), userInfo: nil, repeats: true)
+            timerLabel.textColor = colour.textColour
+            isTimerStarted = true
+        }
+    }
+    
+    func timerTicked() {
+        if lightningModeSecondsLeft > 0 {
+            timerLabel.text = String(lightningModeSecondsLeft)
+            lightningModeSecondsLeft = lightningModeSecondsLeft - 1
+        } else {
+            cancelTimerAsTimedOut(true)
+        }
+    }
+    
+    func cancelTimerAsTimedOut(_ timedOut: Bool) {
+        lightningModeSecondsLeft = totalLightningModeSeconds
+        timerLabel.text = ""
+        
+        timer?.invalidate()
+        isTimerStarted = false
+        
+        if timedOut {
+            displayTimedOut()
+        }
+    }
+    
+    
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {
         gameManager.updateEventUpFromPosition(sender.tag)
