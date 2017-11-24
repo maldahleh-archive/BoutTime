@@ -4,7 +4,7 @@
 This is an iOS game that was created as project #3 of the Treehouse iOS Techdegree, the game involves taking historical events and attempting to place them in chronological order. Each rounds consists of ordering four random events, and there are six rounds in each game.
 
 ## Screenshots
-Coming Soon
+<p align="center"><img src="https://i.imgur.com/5KvVsbk.png" width="200"> <img src="https://i.imgur.com/1URLNun.png" width="200"> <img src="https://i.imgur.com/EjVj3PD.png" width="200"> <img src="https://i.imgur.com/g7MOirP.png" width="200"> </p>
 
 ## Project Instructions
 For this project, you’ll be building an actual game, ‘Bout Time, from the ground up.
