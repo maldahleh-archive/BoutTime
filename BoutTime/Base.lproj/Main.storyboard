@@ -209,6 +209,9 @@
                                     <constraint firstAttribute="height" constant="47.299999999999997" id="Y5j-4X-H0a"/>
                                 </constraints>
                                 <state key="normal" image="next_round_fail"/>
+                                <connections>
+                                    <action selector="nextRoundClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6d6-Xj-KTn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.044716645032167435" green="0.16059233248233795" blue="0.28638553619384766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

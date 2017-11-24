@@ -32,17 +32,19 @@ class ViewController: UIViewController, Resetable {
         gameManager.newGame()
         eventManager.newGame()
         
-        UIUtils.set(interaction: false, for: eventButtons)
-        UIUtils.set(interaction: true, for: navigationButtons)
         newRound()
     }
     
     func newRound() {
+        UIUtils.set(interaction: false, for: eventButtons)
+        UIUtils.set(interaction: true, for: navigationButtons)
+        
         gameManager.isRoundActive = true
         gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
         
         timer.runTimerWith(selector: #selector(timerTicked), onObject: self)
         timeLeftLabel.isHidden = false
+        timeLeftLabel.text = "1:00"
         
         solutionButton.isHidden = true
         informationLabel.text = "Shake to complete"
@@ -99,6 +101,11 @@ class ViewController: UIViewController, Resetable {
     @IBAction func downBtnClicked(_ sender: UIButton) {
         gameManager.updateEventDownFromPosition(sender.tag)
         displayEventsOnLabels()
+    }
+    
+    @IBAction func nextRoundClicked(_ sender: Any) {
+        gameManager.currentRound += 1
+        newRound()
     }
     
     // MARK: Methods pertaining to transitioning to the web view controller
