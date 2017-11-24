@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// Errors used when parsing Event Plist file
 ///
 /// - invalidResource: file does not exist

@@ -8,12 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, Resetable {
-    @IBOutlet weak var eventLabelOne: UIButton!
-    @IBOutlet weak var eventLabelTwo: UIButton!
-    @IBOutlet weak var eventLabelThree: UIButton!
-    @IBOutlet weak var eventLabelFour: UIButton!
-    
+class ViewController: UIViewController, Resetable {    
+    @IBOutlet var eventButtons: [UIButton]!
     @IBOutlet var navigationButtons: [UIButton]!
     
     @IBOutlet weak var timeLeftLabel: UILabel!
@@ -36,7 +32,7 @@ class ViewController: UIViewController, Resetable {
         gameManager.newGame()
         eventManager.newGame()
         
-        UIUtils.set(interaction: false, for: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
+        UIUtils.set(interaction: false, for: eventButtons)
         UIUtils.set(interaction: true, for: navigationButtons)
         newRound()
     }
@@ -57,14 +53,15 @@ class ViewController: UIViewController, Resetable {
     func displayEventsOnLabels() {
         let currentEvents = gameManager.eventsInLabels
         
-        eventLabelOne.setTitle(currentEvents[0].eventDescription, for: .normal)
-        eventLabelTwo.setTitle(currentEvents[1].eventDescription, for: .normal)
-        eventLabelThree.setTitle(currentEvents[2].eventDescription, for: .normal)
-        eventLabelFour.setTitle(currentEvents[3].eventDescription, for: .normal)
+        for eventButton in eventButtons {
+            if let button = eventButton as? UIButton {
+                button.setTitle(currentEvents[button.tag], for: .normal)
+            }
+        }
     }
     
     func checkAndDisplayAnswer() {
-        UIUtils.set(interaction: true, for: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
+        UIUtils.set(interaction: true, for: eventButtons)
         UIUtils.set(interaction: false, for: navigationButtons)
         gameManager.isRoundActive = false
         

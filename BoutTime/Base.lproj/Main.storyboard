@@ -53,7 +53,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-bX-GXI" userLabel="secondEvent">
                                         <rect key="frame" x="0.0" y="133.5" width="335" height="126"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-gH-B4u" userLabel="secondEventBtn">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-gH-B4u" userLabel="secondEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="126"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Button">
@@ -99,7 +99,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-eA-4tK" userLabel="thirdEvent">
                                         <rect key="frame" x="0.0" y="267.5" width="335" height="125.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-je-LRv" userLabel="thirdEventBtn">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-je-LRv" userLabel="thirdEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="125.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Button">
@@ -145,7 +145,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxj-Mu-9A8" userLabel="fourthEvent">
                                         <rect key="frame" x="0.0" y="401" width="335" height="125.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-Pg-D0v" userLabel="fourthEventBtn">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-Pg-D0v" userLabel="fourthEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="125.5"/>
                                                 <color key="backgroundColor" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button">
@@ -216,10 +216,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="eventLabelFour" destination="dVY-Pg-D0v" id="UlM-W6-sUy"/>
-                        <outlet property="eventLabelOne" destination="jke-nX-Vaw" id="WcK-HH-kR1"/>
-                        <outlet property="eventLabelThree" destination="ddd-je-LRv" id="OtB-gt-DdD"/>
-                        <outlet property="eventLabelTwo" destination="AL3-gH-B4u" id="HWz-fo-ODT"/>
                         <outlet property="informationLabel" destination="3rJ-am-S2f" id="5Kt-tH-Bra"/>
                         <outlet property="solutionButton" destination="30w-8X-UGD" id="3tg-9S-Rpg"/>
                         <outlet property="timeLeftLabel" destination="tO0-j3-dT3" id="KVJ-cG-WmB"/>
@@ -229,6 +225,10 @@
                         <outletCollection property="navigationButtons" destination="tOX-EX-lyy" collectionClass="NSMutableArray" id="DCr-9T-Zya"/>
                         <outletCollection property="navigationButtons" destination="iH2-YG-9Tx" collectionClass="NSMutableArray" id="mEO-BQ-qmS"/>
                         <outletCollection property="navigationButtons" destination="DM3-ll-qgL" collectionClass="NSMutableArray" id="omp-Ga-Txx"/>
+                        <outletCollection property="eventButtons" destination="jke-nX-Vaw" collectionClass="NSMutableArray" id="tWg-jn-cBj"/>
+                        <outletCollection property="eventButtons" destination="AL3-gH-B4u" collectionClass="NSMutableArray" id="Nyu-TV-crq"/>
+                        <outletCollection property="eventButtons" destination="ddd-je-LRv" collectionClass="NSMutableArray" id="hyl-Ak-um4"/>
+                        <outletCollection property="eventButtons" destination="dVY-Pg-D0v" collectionClass="NSMutableArray" id="hGc-Cm-t0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
