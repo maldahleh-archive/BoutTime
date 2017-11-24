@@ -20,19 +20,16 @@ class ViewController: UIViewController, GameScreen, Resetable {
     
     let gameManager = GameManager()
     let eventManager = EventManager()
+    let timer = GameTimer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareUI()
+        UIUtils.roundLabelCorners(toRound: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
         newGame()
     }
     
     // MARK: UI related methods
-    func prepareUI() {
-        roundLabelCorners()
-    }
-    
     func newGame() {
         eventManager.newGame()
         gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
@@ -45,20 +42,6 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
 
     // MARK: UI Helper methods
-    func roundLabelCorners() {
-        eventLabelOne.layer.masksToBounds = true
-        eventLabelOne.layer.cornerRadius = 8.0
-        
-        eventLabelTwo.layer.masksToBounds = true
-        eventLabelTwo.layer.cornerRadius = 8.0
-        
-        eventLabelThree.layer.masksToBounds = true
-        eventLabelThree.layer.cornerRadius = 8.0
-        
-        eventLabelFour.layer.masksToBounds = true
-        eventLabelFour.layer.cornerRadius = 8.0
-    }
-    
     func displayEventsOnLabels() {
         let currentEvents = gameManager.eventsInLabels
         
@@ -69,18 +52,13 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func updateUIfor(state: UIState) {
-        
-    }
-    
-    //MARK: Timer methods
-    func runTimer() {
-        if !isTimerStarted {
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: #selector(timerTicked), userInfo: nil, repeats: true)
-            timerLabel.textColor = colour.textColour
-            isTimerStarted = true
+        switch state {
+        case .gameStarting:
+            
         }
     }
     
+    //MARK: Timer methods
     func timerTicked() {
         if lightningModeSecondsLeft > 0 {
             timerLabel.text = String(lightningModeSecondsLeft)
@@ -89,19 +67,6 @@ class ViewController: UIViewController, GameScreen, Resetable {
             cancelTimerAsTimedOut(true)
         }
     }
-    
-    func cancelTimerAsTimedOut(_ timedOut: Bool) {
-        lightningModeSecondsLeft = totalLightningModeSeconds
-        timerLabel.text = ""
-        
-        timer?.invalidate()
-        isTimerStarted = false
-        
-        if timedOut {
-            displayTimedOut()
-        }
-    }
-    
     
     // MARK: Event movement action methods
     @IBAction func upBtnClicked(_ sender: UIButton) {

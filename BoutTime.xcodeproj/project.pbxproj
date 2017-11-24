@@ -12,6 +12,7 @@
 		4A04CA231FC22876002C01BA /* PListUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04CA221FC22876002C01BA /* PListUtils.swift */; };
 		4A22C4AE1FC735FA004822EF /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22C4AD1FC735FA004822EF /* UIState.swift */; };
 		4A48B2EF1FC79C2A005730C4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2EE1FC79C2A005730C4 /* Timer.swift */; };
+		4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */; };
 		4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */; };
 		4A7BB9941FB22EF300BC1C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9931FB22EF300BC1C41 /* ViewController.swift */; };
 		4A7BB9971FB22EF300BC1C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BB9951FB22EF300BC1C41 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		4A04CA221FC22876002C01BA /* PListUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListUtils.swift; sourceTree = "<group>"; };
 		4A22C4AD1FC735FA004822EF /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		4A48B2EE1FC79C2A005730C4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		4A7BB98E1FB22EF300BC1C41 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7BB9931FB22EF300BC1C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,15 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
+		4A48B2F21FC7A153005730C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A04CA221FC22876002C01BA /* PListUtils.swift */,
+				4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4A7BB9851FB22EF300BC1C41 = {
 			isa = PBXGroup;
 			children = (
@@ -77,18 +88,18 @@
 		4A7BB9901FB22EF300BC1C41 /* BoutTime */ = {
 			isa = PBXGroup;
 			children = (
+				4A7BB9981FB22EF300BC1C41 /* Assets.xcassets */,
 				4A04CA1F1FC21A10002C01BA /* Events */,
+				4A48B2F21FC7A153005730C4 /* Utils */,
+				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
 				4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */,
 				4A7BB9931FB22EF300BC1C41 /* ViewController.swift */,
+				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
+				4A22C4AD1FC735FA004822EF /* UIState.swift */,
 				4A7BB9951FB22EF300BC1C41 /* Main.storyboard */,
-				4A7BB9981FB22EF300BC1C41 /* Assets.xcassets */,
 				4A7BB99A1FB22EF300BC1C41 /* LaunchScreen.storyboard */,
 				4A7BB99D1FB22EF300BC1C41 /* Info.plist */,
-				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
 				4A04CA201FC21AB5002C01BA /* Events.plist */,
-				4A04CA221FC22876002C01BA /* PListUtils.swift */,
-				4A22C4AD1FC735FA004822EF /* UIState.swift */,
-				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
 			);
 			path = BoutTime;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 				4A9D395A1FBE1ADF0009F430 /* GameManager.swift in Sources */,
 				4AEA2FB41FBB41C800116C4B /* Event.swift in Sources */,
 				4A22C4AE1FC735FA004822EF /* UIState.swift in Sources */,
+				4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */,
 				4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */,
 				4A48B2EF1FC79C2A005730C4 /* Timer.swift in Sources */,
 			);

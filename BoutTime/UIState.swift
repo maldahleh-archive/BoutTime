@@ -7,5 +7,5 @@
 //
 
 enum UIState {
-    case GAME_STARTED
+    case gameStarting
 }
