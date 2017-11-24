@@ -14,6 +14,7 @@
 		4A48B2EF1FC79C2A005730C4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2EE1FC79C2A005730C4 /* Timer.swift */; };
 		4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */; };
 		4A48B2F41FC7ACDB005730C4 /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */; };
+		4A48B2F61FC7BE58005730C4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F51FC7BE58005730C4 /* WebViewController.swift */; };
 		4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */; };
 		4A7BB9941FB22EF300BC1C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7BB9931FB22EF300BC1C41 /* ViewController.swift */; };
 		4A7BB9971FB22EF300BC1C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7BB9951FB22EF300BC1C41 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		4A48B2EE1FC79C2A005730C4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
+		4A48B2F51FC7BE58005730C4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4A7BB98E1FB22EF300BC1C41 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7BB9931FB22EF300BC1C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4A48B2F71FC7BE7E005730C4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A7BB9931FB22EF300BC1C41 /* ViewController.swift */,
+				4A48B2F51FC7BE58005730C4 /* WebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4A7BB9851FB22EF300BC1C41 = {
 			isa = PBXGroup;
 			children = (
@@ -92,11 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				4A7BB9981FB22EF300BC1C41 /* Assets.xcassets */,
+				4A48B2F71FC7BE7E005730C4 /* ViewControllers */,
 				4A04CA1F1FC21A10002C01BA /* Events */,
 				4A48B2F21FC7A153005730C4 /* Utils */,
 				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
 				4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */,
-				4A7BB9931FB22EF300BC1C41 /* ViewController.swift */,
 				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
 				4A22C4AD1FC735FA004822EF /* UIState.swift */,
 				4A7BB9951FB22EF300BC1C41 /* Main.storyboard */,
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A04CA231FC22876002C01BA /* PListUtils.swift in Sources */,
+				4A48B2F61FC7BE58005730C4 /* WebViewController.swift in Sources */,
 				4A04CA1E1FC21A09002C01BA /* EventManager.swift in Sources */,
 				4A7BB9941FB22EF300BC1C41 /* ViewController.swift in Sources */,
 				4A9D395A1FBE1ADF0009F430 /* GameManager.swift in Sources */,

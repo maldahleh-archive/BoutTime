@@ -9,7 +9,7 @@
 import UIKit
 
 class UIUtils {
-    static func roundLabelCorners(toRound: [UILabel]) {
+    static func roundLabelCorners(toRound: [UIButton]) {
         for label in toRound {
             let bounds: CGRect = label.bounds
             let maskPath = UIBezierPath(roundedRect: bounds,
@@ -19,6 +19,12 @@ class UIUtils {
             maskLayer.frame = bounds
             maskLayer.path = maskPath.cgPath
             label.layer.mask = maskLayer
+        }
+    }
+    
+    static func set(interaction: Bool, for buttons: [UIButton]) {
+        for button in buttons {
+            button.isUserInteractionEnabled = interaction
         }
     }
 }

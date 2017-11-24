@@ -25,13 +25,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqN-rd-5w1" userLabel="firstEvent">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="125.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCK-1F-Dj9" userLabel="topBoxLabel">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jke-nX-Vaw">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="125.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                                <color key="textColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvG-gC-zBR" userLabel="topBoxDown">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="125.5"/>
                                                 <constraints>
@@ -53,13 +53,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK2-bX-GXI" userLabel="secondEvent">
                                         <rect key="frame" x="0.0" y="133.5" width="335" height="126"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-Ql-pn1" userLabel="secondBoxLabel">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-gH-B4u" userLabel="secondEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="126"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                                <color key="textColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-lT-2yM" userLabel="secondEventButtons">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="126"/>
                                                 <subviews>
@@ -99,13 +99,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-eA-4tK" userLabel="thirdEvent">
                                         <rect key="frame" x="0.0" y="267.5" width="335" height="125.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J14-Ga-Hhl" userLabel="thirdBoxLabel">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-je-LRv" userLabel="thirdEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="125.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                                <color key="textColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-Yl-cwH" userLabel="thirdEventButtons">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="125.5"/>
                                                 <subviews>
@@ -145,13 +145,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxj-Mu-9A8" userLabel="fourthEvent">
                                         <rect key="frame" x="0.0" y="401" width="335" height="125.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwG-bR-Xge" userLabel="fourthBoxLabel">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-Pg-D0v" userLabel="fourthEventBtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="125.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                                <color key="textColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <color key="backgroundColor" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-ll-qgL" userLabel="fourthBoxUp">
                                                 <rect key="frame" x="295" y="0.0" width="40" height="125.5"/>
                                                 <constraints>
@@ -197,9 +197,6 @@
                                     <constraint firstAttribute="height" constant="47.299999999999997" id="Y5j-4X-H0a"/>
                                 </constraints>
                                 <state key="normal" image="next_round_fail"/>
-                                <connections>
-                                    <segue destination="kmA-Pa-Xaq" kind="show" identifier="toWebView" id="dIB-hq-5fE"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.044716645032167435" green="0.16059233248233795" blue="0.28638553619384766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -219,23 +216,29 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="eventLabelFour" destination="MwG-bR-Xge" id="PhW-a5-1PU"/>
-                        <outlet property="eventLabelOne" destination="TCK-1F-Dj9" id="Tqt-3J-X2I"/>
-                        <outlet property="eventLabelThree" destination="J14-Ga-Hhl" id="tS9-88-L0Y"/>
-                        <outlet property="eventLabelTwo" destination="lqt-Ql-pn1" id="c5c-iu-B4L"/>
+                        <outlet property="eventLabelFour" destination="dVY-Pg-D0v" id="UlM-W6-sUy"/>
+                        <outlet property="eventLabelOne" destination="jke-nX-Vaw" id="WcK-HH-kR1"/>
+                        <outlet property="eventLabelThree" destination="ddd-je-LRv" id="OtB-gt-DdD"/>
+                        <outlet property="eventLabelTwo" destination="AL3-gH-B4u" id="HWz-fo-ODT"/>
                         <outlet property="informationLabel" destination="3rJ-am-S2f" id="5Kt-tH-Bra"/>
                         <outlet property="solutionButton" destination="30w-8X-UGD" id="3tg-9S-Rpg"/>
                         <outlet property="timeLeftLabel" destination="tO0-j3-dT3" id="KVJ-cG-WmB"/>
+                        <outletCollection property="navigationButtons" destination="zvG-gC-zBR" collectionClass="NSMutableArray" id="5D3-dX-H6K"/>
+                        <outletCollection property="navigationButtons" destination="tEv-PN-hmy" collectionClass="NSMutableArray" id="1k4-FP-pO2"/>
+                        <outletCollection property="navigationButtons" destination="crB-G3-wOo" collectionClass="NSMutableArray" id="lgh-vp-dwy"/>
+                        <outletCollection property="navigationButtons" destination="tOX-EX-lyy" collectionClass="NSMutableArray" id="DCr-9T-Zya"/>
+                        <outletCollection property="navigationButtons" destination="iH2-YG-9Tx" collectionClass="NSMutableArray" id="mEO-BQ-qmS"/>
+                        <outletCollection property="navigationButtons" destination="DM3-ll-qgL" collectionClass="NSMutableArray" id="omp-Ga-Txx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--WebViewController-->
         <scene sceneID="8Mj-9d-1if">
             <objects>
-                <viewController id="kmA-Pa-Xaq" sceneMemberID="viewController">
+                <viewController title="WebViewController" id="kmA-Pa-Xaq" customClass="WebViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hfW-LH-zMy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

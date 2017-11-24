@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, GameScreen, Resetable {
-    @IBOutlet weak var eventLabelOne: UILabel!
-    @IBOutlet weak var eventLabelTwo: UILabel!
-    @IBOutlet weak var eventLabelThree: UILabel!
-    @IBOutlet weak var eventLabelFour: UILabel!
+class ViewController: UIViewController, Resetable {
+    @IBOutlet weak var eventLabelOne: UIButton!
+    @IBOutlet weak var eventLabelTwo: UIButton!
+    @IBOutlet weak var eventLabelThree: UIButton!
+    @IBOutlet weak var eventLabelFour: UIButton!
+    
+    @IBOutlet var navigationButtons: [UIButton]!
     
     @IBOutlet weak var timeLeftLabel: UILabel!
     @IBOutlet weak var solutionButton: UIButton!
@@ -25,17 +27,16 @@ class ViewController: UIViewController, GameScreen, Resetable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIUtils.roundLabelCorners(toRound: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
+        // UIUtils.roundLabelCorners(toRound: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
         newGame()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
     }
     
     // MARK: UI related methods
     func newGame() {
         eventManager.newGame()
+        
+        UIUtils.set(interaction: false, for: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
+        UIUtils.set(interaction: true, for: navigationButtons)
         updateUIfor(state: .newRound)
     }
 
@@ -43,10 +44,10 @@ class ViewController: UIViewController, GameScreen, Resetable {
     func displayEventsOnLabels() {
         let currentEvents = gameManager.eventsInLabels
         
-        eventLabelOne.text = currentEvents[0].eventDescription
-        eventLabelTwo.text = currentEvents[1].eventDescription
-        eventLabelThree.text = currentEvents[2].eventDescription
-        eventLabelFour.text = currentEvents[3].eventDescription
+        eventLabelOne.setTitle(currentEvents[0].eventDescription, for: .normal)
+        eventLabelTwo.setTitle(currentEvents[1].eventDescription, for: .normal)
+        eventLabelThree.setTitle(currentEvents[2].eventDescription, for: .normal)
+        eventLabelFour.setTitle(currentEvents[3].eventDescription, for: .normal)
     }
     
     func updateUIfor(state: UIState) {
@@ -65,6 +66,8 @@ class ViewController: UIViewController, GameScreen, Resetable {
     }
     
     func checkAndDisplayAnswer() {
+        UIUtils.set(interaction: true, for: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
+        UIUtils.set(interaction: false, for: navigationButtons)
         gameManager.isRoundActive = false
         
         timer.cancelTimer()
@@ -113,13 +116,4 @@ class ViewController: UIViewController, GameScreen, Resetable {
             checkAndDisplayAnswer()
         }
     }
-}
-
-protocol GameScreen {
-    weak var eventLabelOne: UILabel! { get set }
-    weak var eventLabelTwo: UILabel! { get set }
-    weak var eventLabelThree: UILabel! { get set }
-    weak var eventLabelFour: UILabel! { get set }
-    
-    func displayEventsOnLabels()
 }
