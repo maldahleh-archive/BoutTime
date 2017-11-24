@@ -33,11 +33,24 @@ class ViewController: UIViewController, Resetable {
     
     // MARK: UI related methods
     func newGame() {
+        gameManager.newGame()
         eventManager.newGame()
         
         UIUtils.set(interaction: false, for: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
         UIUtils.set(interaction: true, for: navigationButtons)
-        updateUIfor(state: .newRound)
+        newRound()
+    }
+    
+    func newRound() {
+        gameManager.isRoundActive = true
+        gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
+        
+        timer.runTimerWith(selector: #selector(timerTicked), onObject: self)
+        timeLeftLabel.isHidden = false
+        
+        solutionButton.isHidden = true
+        informationLabel.text = "Shake to complete"
+        displayEventsOnLabels()
     }
 
     // MARK: UI Helper methods
@@ -48,21 +61,6 @@ class ViewController: UIViewController, Resetable {
         eventLabelTwo.setTitle(currentEvents[1].eventDescription, for: .normal)
         eventLabelThree.setTitle(currentEvents[2].eventDescription, for: .normal)
         eventLabelFour.setTitle(currentEvents[3].eventDescription, for: .normal)
-    }
-    
-    func updateUIfor(state: UIState) {
-        switch state {
-        case .newRound:
-            gameManager.eventsInLabels = eventManager.getEventSetFor(round: gameManager.currentRound).eventSet
-            
-            timer.runTimerWith(selector: #selector(timerTicked), onObject: self)
-            timeLeftLabel.isHidden = false
-            
-            solutionButton.isHidden = true
-            informationLabel.text = "Shake to complete"
-            displayEventsOnLabels()
-            
-        }
     }
     
     func checkAndDisplayAnswer() {
@@ -89,7 +87,7 @@ class ViewController: UIViewController, Resetable {
     @objc func timerTicked() {
         if timer.currentSeconds > -1 {
             timeLeftLabel.text = NumberUtils.clean(num: timer.currentSeconds)
-            timer.currentSeconds = timer.currentSeconds - 1
+            timer.currentSeconds -= 1
         } else {
             checkAndDisplayAnswer()
         }

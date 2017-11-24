@@ -43,6 +43,7 @@ class GameManager: Playable, RoundHandler, Updater, Resetable {
     
     func newGame() {
         currentRound = 1
+        isRoundActive = true
         
         roundsWon = 0
         totalRounds = 0

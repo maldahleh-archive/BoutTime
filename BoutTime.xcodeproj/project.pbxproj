@@ -10,7 +10,6 @@
 		4A04CA1E1FC21A09002C01BA /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04CA1D1FC21A09002C01BA /* EventManager.swift */; };
 		4A04CA211FC21AB5002C01BA /* Events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A04CA201FC21AB5002C01BA /* Events.plist */; };
 		4A04CA231FC22876002C01BA /* PListUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04CA221FC22876002C01BA /* PListUtils.swift */; };
-		4A22C4AE1FC735FA004822EF /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22C4AD1FC735FA004822EF /* UIState.swift */; };
 		4A48B2EF1FC79C2A005730C4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2EE1FC79C2A005730C4 /* Timer.swift */; };
 		4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */; };
 		4A48B2F41FC7ACDB005730C4 /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */; };
@@ -28,7 +27,6 @@
 		4A04CA1D1FC21A09002C01BA /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		4A04CA201FC21AB5002C01BA /* Events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Events.plist; sourceTree = "<group>"; };
 		4A04CA221FC22876002C01BA /* PListUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListUtils.swift; sourceTree = "<group>"; };
-		4A22C4AD1FC735FA004822EF /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		4A48B2EE1FC79C2A005730C4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		4A48B2F01FC7A0FA005730C4 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		4A48B2F31FC7ACDB005730C4 /* NumberUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				4A9D39591FBE1ADF0009F430 /* GameManager.swift */,
 				4A7BB9911FB22EF300BC1C41 /* AppDelegate.swift */,
 				4A48B2EE1FC79C2A005730C4 /* Timer.swift */,
-				4A22C4AD1FC735FA004822EF /* UIState.swift */,
 				4A7BB9951FB22EF300BC1C41 /* Main.storyboard */,
 				4A7BB99A1FB22EF300BC1C41 /* LaunchScreen.storyboard */,
 				4A7BB99D1FB22EF300BC1C41 /* Info.plist */,
@@ -197,7 +194,6 @@
 				4A7BB9941FB22EF300BC1C41 /* ViewController.swift in Sources */,
 				4A9D395A1FBE1ADF0009F430 /* GameManager.swift in Sources */,
 				4AEA2FB41FBB41C800116C4B /* Event.swift in Sources */,
-				4A22C4AE1FC735FA004822EF /* UIState.swift in Sources */,
 				4A48B2F41FC7ACDB005730C4 /* NumberUtils.swift in Sources */,
 				4A48B2F11FC7A0FA005730C4 /* UIUtils.swift in Sources */,
 				4A7BB9921FB22EF300BC1C41 /* AppDelegate.swift in Sources */,
