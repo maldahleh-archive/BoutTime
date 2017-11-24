@@ -197,6 +197,9 @@
                                     <constraint firstAttribute="height" constant="47.299999999999997" id="Y5j-4X-H0a"/>
                                 </constraints>
                                 <state key="normal" image="next_round_fail"/>
+                                <connections>
+                                    <segue destination="kmA-Pa-Xaq" kind="show" identifier="toWebView" id="dIB-hq-5fE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.044716645032167435" green="0.16059233248233795" blue="0.28638553619384766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -229,6 +232,47 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8Mj-9d-1if">
+            <objects>
+                <viewController id="kmA-Pa-Xaq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfW-LH-zMy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P8-vp-ACi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="he4-Gb-NH7"/>
+                                </constraints>
+                                <state key="normal" image="webview_bar"/>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-Ho-TKD">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7W5-Ho-TKD" firstAttribute="trailing" secondItem="1eD-j3-rRr" secondAttribute="trailing" id="83K-mc-nNb"/>
+                            <constraint firstItem="1P8-vp-ACi" firstAttribute="leading" secondItem="1eD-j3-rRr" secondAttribute="leading" id="9kX-mP-N18"/>
+                            <constraint firstItem="7W5-Ho-TKD" firstAttribute="bottom" secondItem="1eD-j3-rRr" secondAttribute="bottom" id="Nfp-rj-Pti"/>
+                            <constraint firstItem="7W5-Ho-TKD" firstAttribute="top" secondItem="1P8-vp-ACi" secondAttribute="bottom" id="fec-RE-Z7v"/>
+                            <constraint firstItem="1P8-vp-ACi" firstAttribute="top" secondItem="hfW-LH-zMy" secondAttribute="top" id="i8l-TR-hK4"/>
+                            <constraint firstItem="1P8-vp-ACi" firstAttribute="trailing" secondItem="1eD-j3-rRr" secondAttribute="trailing" id="mk4-Wz-alX"/>
+                            <constraint firstItem="7W5-Ho-TKD" firstAttribute="leading" secondItem="1eD-j3-rRr" secondAttribute="leading" id="yfk-Rv-MPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1eD-j3-rRr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncp-nY-EB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="132.68365817091455"/>
+        </scene>
     </scenes>
     <resources>
         <image name="down_full" width="158" height="457"/>
@@ -240,5 +284,6 @@
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
         <image name="up_half_selected" width="158" height="229"/>
+        <image name="webview_bar" width="1333" height="167"/>
     </resources>
 </document>
