@@ -24,7 +24,6 @@ class ViewController: UIViewController, Resetable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // UIUtils.roundLabelCorners(toRound: [eventLabelOne, eventLabelTwo, eventLabelThree, eventLabelFour])
         newGame()
     }
     
