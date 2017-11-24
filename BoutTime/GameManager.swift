@@ -7,11 +7,18 @@
 //
 
 protocol Playable {
-    var currentRound: Int { get set }
     var eventsInLabels: [Event] { get set }
+}
+
+protocol RoundHandler {
+    var currentRound: Int { get set }
     var isRoundActive: Bool { get set }
     
+    var roundsWon: Int { get set }
+    var totalRounds: Int { get set }
+    
     func nextRound()
+    func logRound(won: Bool)
 }
 
 protocol Updater {
@@ -23,18 +30,34 @@ protocol Resetable {
     func newGame()
 }
 
-class GameManager: Playable, Updater, Resetable {
-    var currentRound: Int = 1
+class GameManager: Playable, RoundHandler, Updater, Resetable {
     var eventsInLabels: [Event] = []
+    
+    var currentRound: Int = 1
     var isRoundActive: Bool = true
+    
+    var roundsWon: Int = 0
+    var totalRounds: Int = 0
     
     func newGame() {
         currentRound = 1
+        
+        roundsWon = 0
+        totalRounds = 0
+        
         eventsInLabels = []
     }
     
     func nextRound() {
         currentRound += 1
+    }
+    
+    func logRound(won: Bool) {
+        if won {
+            roundsWon += 1
+        }
+        
+        totalRounds += 1
     }
     
     // MARK: Functions related to the movement of labels

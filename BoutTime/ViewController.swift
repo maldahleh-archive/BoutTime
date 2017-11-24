@@ -29,6 +29,10 @@ class ViewController: UIViewController, GameScreen, Resetable {
         newGame()
     }
     
+    override func viewDidLayoutSubviews() {
+        
+    }
+    
     // MARK: UI related methods
     func newGame() {
         eventManager.newGame()
@@ -71,10 +75,10 @@ class ViewController: UIViewController, GameScreen, Resetable {
         
         if eventManager.doesMatchFor(array: gameManager.eventsInLabels, round: gameManager.currentRound) {
             solutionButton.setImage(UIImage(named: "next_round_success"), for: .normal)
-            // FIXME: Correct
+            gameManager.logRound(won: true)
         } else {
             solutionButton.setImage(UIImage(named: "next_round_fail"), for: .normal)
-            // FIXME: Wrong
+            gameManager.logRound(won: false)
         }
     }
     

@@ -11,8 +11,14 @@ import UIKit
 class UIUtils {
     static func roundLabelCorners(toRound: [UILabel]) {
         for label in toRound {
-            label.layer.masksToBounds = true
-            label.layer.cornerRadius = 8.0
+            let bounds: CGRect = label.bounds
+            let maskPath = UIBezierPath(roundedRect: bounds,
+                                        byRoundingCorners: ([.topLeft, .bottomLeft]),
+                                        cornerRadii: CGSize(width: 8.0, height: 8.0))
+            let maskLayer = CAShapeLayer()
+            maskLayer.frame = bounds
+            maskLayer.path = maskPath.cgPath
+            label.layer.mask = maskLayer
         }
     }
 }
