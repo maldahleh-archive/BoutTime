@@ -253,6 +253,51 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
         </scene>
+        <!--ResultViewController-->
+        <scene sceneID="im7-uS-UrY">
+            <objects>
+                <viewController title="ResultViewController" id="58z-ER-8Qq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qsq-rq-CXa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrE-u1-qLK" userLabel="scoreLabel">
+                                <rect key="frame" x="141.5" y="312" width="92.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNz-j8-kgk" userLabel="playAgainBtn">
+                                <rect key="frame" x="112" y="404" width="150" height="47.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47.299999999999997" id="0IY-0o-Ga3"/>
+                                    <constraint firstAttribute="width" constant="150" id="peI-NM-tup"/>
+                                </constraints>
+                                <state key="normal" image="play_again"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-7v-D3J">
+                                <rect key="frame" x="140.5" y="280" width="94" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.31129294633865356" green="0.56441903114318848" blue="0.70594024658203125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.044716645032167435" green="0.16059233248233795" blue="0.28638553619384766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uuA-7v-D3J" firstAttribute="centerX" secondItem="Qsq-rq-CXa" secondAttribute="centerX" id="5EW-XI-CWd"/>
+                            <constraint firstItem="RrE-u1-qLK" firstAttribute="top" secondItem="uuA-7v-D3J" secondAttribute="bottom" constant="8" id="JKu-wu-K7i"/>
+                            <constraint firstItem="PNz-j8-kgk" firstAttribute="centerX" secondItem="Qsq-rq-CXa" secondAttribute="centerX" id="aTy-Eh-Xtz"/>
+                            <constraint firstItem="RrE-u1-qLK" firstAttribute="centerY" secondItem="Qsq-rq-CXa" secondAttribute="centerY" id="mG1-4E-e2K"/>
+                            <constraint firstItem="PNz-j8-kgk" firstAttribute="top" secondItem="RrE-u1-qLK" secondAttribute="bottom" constant="50" id="weq-hb-fDf"/>
+                            <constraint firstItem="RrE-u1-qLK" firstAttribute="centerX" secondItem="Qsq-rq-CXa" secondAttribute="centerX" id="wrm-fU-J9S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PlC-jE-TH9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utp-fL-R9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="802.848575712144"/>
+        </scene>
         <!--WebViewController-->
         <scene sceneID="8Mj-9d-1if">
             <objects>
@@ -309,6 +354,7 @@
         <image name="down_half" width="158" height="229"/>
         <image name="down_half_selected" width="158" height="229"/>
         <image name="next_round_fail" width="558" height="142"/>
+        <image name="play_again" width="450" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
