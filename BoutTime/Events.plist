@@ -108,9 +108,9 @@
 	</dict>
 	<dict>
 		<key>event</key>
-		<string>Fiest Indochina War</string>
+		<string>First Indochina War</string>
 		<key>year</key>
-		<integer>1946</integer>
+		<real>1946</real>
 		<key>url</key>
 		<string>https://en.wikipedia.org/wiki/First_Indochina_War</string>
 	</dict>
