@@ -20,6 +20,7 @@ class WebViewController: UIViewController, WKUIDelegate {
         
         if let url = webURL, let encodedURL = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let eventUrl = URL(string: encodedURL) {
             webView.load(URLRequest(url: eventUrl))
+            webView.allowsBackForwardNavigationGestures = true
         }
     }
     
