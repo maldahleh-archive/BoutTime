@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     
     @objc func timerTicked() {
         if timer.currentSeconds > -1 {
-            timeLeftLabel.text = NumberUtils.clean(num: timer.currentSeconds)
+            timeLeftLabel.text = NumberUtils.format(num: timer.currentSeconds)
             timer.currentSeconds -= 1
         } else {
             checkAndDisplayAnswer()

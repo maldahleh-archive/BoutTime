@@ -7,7 +7,7 @@
 //
 
 class NumberUtils {
-    static func clean(num: Int) -> String {
+    static func format(num: Int) -> String {
         if num == 60 {
             return "1:00"
         } else if num < 60 && num >= 10 {
