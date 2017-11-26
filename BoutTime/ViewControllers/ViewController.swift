@@ -81,17 +81,17 @@ class ViewController: UIViewController {
     }
     
     // MARK: Actions for the main UI elements
-    @IBAction func upBtnClicked(_ sender: UIButton) {
+    @IBAction func upButtonTapped(_ sender: UIButton) {
         gameManager.updateEventUpFromPosition(sender.tag)
         displayEventsOnLabels()
     }
     
-    @IBAction func downBtnClicked(_ sender: UIButton) {
+    @IBAction func downButtonTapped(_ sender: UIButton) {
         gameManager.updateEventDownFromPosition(sender.tag)
         displayEventsOnLabels()
     }
     
-    @IBAction func nextRoundClicked(_ sender: Any) {
+    @IBAction func nextRoundTapped(_ sender: Any) {
         if gameManager.currentRound == 6 {
             performSegue(withIdentifier: "toScore", sender: nil)
             return
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: Segue methods to transition to other view controllers
-    @IBAction func eventBtnClicked(_ sender: UIButton) {
+    @IBAction func eventButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "toWebView", sender: sender.tag)
     }
     

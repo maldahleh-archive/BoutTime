@@ -32,7 +32,7 @@
                                                     <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="eventBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liu-AG-QdU"/>
+                                                    <action selector="eventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgi-9b-CMa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvG-gC-zBR" userLabel="topBoxDown">
@@ -45,7 +45,7 @@
                                                 <state key="selected" image="down_full_selected"/>
                                                 <state key="highlighted" image="down_full_selected"/>
                                                 <connections>
-                                                    <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KQ-QV-lif"/>
+                                                    <action selector="downButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDD-l3-qYI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -63,7 +63,7 @@
                                                     <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="eventBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uU1-cY-9Z0"/>
+                                                    <action selector="eventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h93-38-gwv"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-lT-2yM" userLabel="secondEventButtons">
@@ -79,7 +79,7 @@
                                                         <state key="selected" image="up_half_selected"/>
                                                         <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
-                                                            <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0S-GN-f4G"/>
+                                                            <action selector="upButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyd-lU-pTb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-G3-wOo" userLabel="secondBoxDown">
@@ -92,7 +92,7 @@
                                                         <state key="selected" image="down_half_selected"/>
                                                         <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
-                                                            <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5X-Rg-cth"/>
+                                                            <action selector="downButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vu0-5k-8fA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -112,7 +112,7 @@
                                                     <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="eventBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZd-ZU-Tpc"/>
+                                                    <action selector="eventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpE-aI-w8I"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-Yl-cwH" userLabel="thirdEventButtons">
@@ -128,7 +128,7 @@
                                                         <state key="selected" image="up_half_selected"/>
                                                         <state key="highlighted" image="up_half_selected"/>
                                                         <connections>
-                                                            <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaJ-2d-CMJ"/>
+                                                            <action selector="upButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNJ-oE-xlY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-YG-9Tx" userLabel="thirdBoxDown">
@@ -141,7 +141,7 @@
                                                         <state key="selected" image="down_half_selected"/>
                                                         <state key="highlighted" image="down_half_selected"/>
                                                         <connections>
-                                                            <action selector="downBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCe-iX-DPJ"/>
+                                                            <action selector="downButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HoW-sN-b4v"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -161,7 +161,7 @@
                                                     <color key="titleColor" red="0.24432869255542755" green="0.4468633234500885" blue="0.55693697929382324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="eventBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfj-B5-CQ3"/>
+                                                    <action selector="eventButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9l-5S-Oe9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM3-ll-qgL" userLabel="fourthBoxUp">
@@ -174,7 +174,7 @@
                                                 <state key="selected" image="up_full_selected"/>
                                                 <state key="highlighted" image="up_full_selected"/>
                                                 <connections>
-                                                    <action selector="upBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGi-wD-Gvs"/>
+                                                    <action selector="upButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0n-8G-iVO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -210,7 +210,7 @@
                                 </constraints>
                                 <state key="normal" image="next_round_fail"/>
                                 <connections>
-                                    <action selector="nextRoundClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6d6-Xj-KTn"/>
+                                    <action selector="nextRoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhe-m8-vPo"/>
                                 </connections>
                             </button>
                         </subviews>
