@@ -8,8 +8,6 @@
 
 import UIKit
 
-// FIXME: rounding corners
-
 class ViewController: UIViewController {    
     @IBOutlet var eventButtons: [UIButton]!
     @IBOutlet var navigationButtons: [UIButton]!
