@@ -276,7 +276,7 @@
                                 </constraints>
                                 <state key="normal" image="play_again"/>
                                 <connections>
-                                    <action selector="playAgainBtnClicked:" destination="58z-ER-8Qq" eventType="touchUpInside" id="v6l-kd-piz"/>
+                                    <action selector="playAgainButtonTapped:" destination="58z-ER-8Qq" eventType="touchUpInside" id="T6n-UO-I6v"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-7v-D3J" userLabel="scoreHeaderLbl">

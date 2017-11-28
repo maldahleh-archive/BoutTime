@@ -23,7 +23,7 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = score
     }
     
-    @IBAction func playAgainBtnClicked(_ sender: Any) {
+    @IBAction func playAgainButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "toMain", sender: nil)
     }
 }
