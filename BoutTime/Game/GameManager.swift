@@ -17,10 +17,10 @@ protocol RoundHandler {
     var roundsWon: Int { get set }
     var totalRounds: Int { get set }
     
+    var score: String { get }
+    
     func nextRound()
     func logRound(won: Bool)
-    
-    func getScore() -> String
 }
 
 protocol Updater {
@@ -40,6 +40,10 @@ class GameManager: Playable, RoundHandler, Updater, Resetable {
     
     var roundsWon: Int = 0
     var totalRounds: Int = 0
+    
+    var score: String {
+        return "\(roundsWon)/\(totalRounds)"
+    }
     
     func newGame() {
         currentRound = 1
@@ -61,10 +65,6 @@ class GameManager: Playable, RoundHandler, Updater, Resetable {
         }
         
         totalRounds += 1
-    }
-    
-    func getScore() -> String {
-        return "\(roundsWon)/\(totalRounds)"
     }
     
     // MARK: Functions related to the movement of labels

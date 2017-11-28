@@ -123,7 +123,7 @@ class ViewController: UIViewController {
                     return
                 }
                 
-                destinationVC.userScore = gameManager.getScore()
+                destinationVC.userScore = gameManager.score
                 break
             default: return
             }
