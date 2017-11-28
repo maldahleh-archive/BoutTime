@@ -324,7 +324,7 @@
                                         </constraints>
                                         <state key="normal" image="webview_bar"/>
                                         <connections>
-                                            <action selector="backBtnClicked:" destination="kmA-Pa-Xaq" eventType="touchUpInside" id="rih-Pd-t9S"/>
+                                            <action selector="backButtonTapped:" destination="kmA-Pa-Xaq" eventType="touchUpInside" id="zx1-Lq-tLn"/>
                                         </connections>
                                     </button>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-A2-34l" userLabel="eventWebView">

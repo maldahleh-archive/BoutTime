@@ -24,7 +24,7 @@ class WebViewController: UIViewController, WKUIDelegate {
         }
     }
     
-    @IBAction func backBtnClicked(_ sender: Any) {
+    @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 }
