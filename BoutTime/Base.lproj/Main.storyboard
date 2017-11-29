@@ -299,12 +299,12 @@
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="RrE-u1-qLK" id="cAc-yH-edu"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMain" id="c0e-9J-qnW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMain" id="CJr-tq-OMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Utp-fL-R9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="954"/>
+            <point key="canvasLocation" x="134" y="904"/>
         </scene>
         <!--WebViewController-->
         <scene sceneID="8Mj-9d-1if">
