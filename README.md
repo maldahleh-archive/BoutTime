@@ -1,6 +1,5 @@
 # BoutTime
 
-## Overview
 This is an iOS game that was created as project #3 of the Treehouse iOS Techdegree, the game involves taking historical events and attempting to place them in chronological order. Each rounds consists of ordering four random events, and there are six rounds in each game.
 
 ## Screenshots
